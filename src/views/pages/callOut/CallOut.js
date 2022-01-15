@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button,Checkbox, Typography } from 'antd';
-import { colours } from '../styles/colours';
+import { colours } from '../../styles/colours';
 
 const { Title, Text } = Typography;
 

@@ -35,7 +35,7 @@ const GlobalModal = ({ showGlobalModal, children, btn, handleCloseGlobalModal })
         fontWeight: 'normal',
       }}
     >
-      <Wrapper>
+      <Wrapper data-test="data-test=component-globalmodal">
         {children}
         {btn && (
           <Button
@@ -43,6 +43,7 @@ const GlobalModal = ({ showGlobalModal, children, btn, handleCloseGlobalModal })
             type="link"
             onClick={handleCloseGlobalModal}
             label="Cancel"
+            data-test="data-test=component-globalmodal-button"
           />
         )}
       </Wrapper>

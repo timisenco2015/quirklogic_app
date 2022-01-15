@@ -1,13 +1,13 @@
 import React, { useEffect,useState} from 'react';
 import { ReloadOutlined,DeleteTwoTone } from '@ant-design/icons';
-import GlobalModal from './GlobalModal';
-import ErrorPage from './ErrorPage';
-import {colours} from '../styles/colours';
-import useMediaSize from '../../utils/hooks/useMediaSize';
-import SearchInput from './SearchInput';
-import { getAllBooks,resetSavedCatalogBook,deleteSpecificBook } from '../../state/ducks/books/actions';
+import GlobalModal from '../globalModal/GlobalModal';
+import ErrorPage from '../error/ErrorPage';
+import {colours} from '../../styles/colours';
+import useMediaSize from '../../../utils/hooks/useMediaSize';
+import SearchInput from '../search/SearchInput';
+import { getAllBooks,resetSavedCatalogBook,deleteSpecificBook } from '../../../state/ducks/books/actions';
 import { useDispatch, useSelector } from 'react-redux';
-import ApiRequest from '../../middlewares/ApiRequest';
+import ApiRequest from '../../../middlewares/ApiRequest';
 import { Table, Spin,Empty,message } from 'antd';
 import styled from 'styled-components';
 

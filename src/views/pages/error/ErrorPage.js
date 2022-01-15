@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import CallOut from '../pages/CallOut';
-import { colours } from '../styles/colours';
+import CallOut from '../callOut/CallOut'
+import { colours } from '../../styles/colours'
 import { QuestionCircleFilled } from '@ant-design/icons';
 const ContentWrapper = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const CenterContentWrapper = styled.div`
 const ErrorPage = (props) => {
   return (
     <>
-      <ContentWrapper>
+      <ContentWrapper data-test="data-test=component-errorpage">
         <QuestionCircleFilled style={{ fontSize: '60px', color: `${colours.purple.p10}` }} />
         <div>
           <CallOut

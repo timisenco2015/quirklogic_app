@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './index.css';
-import BookCatalog from '../src/views/pages/BookCatalog';
+import BookCatalog from '../src/views/pages/component/BookCatalog';
 import configureStore from './state/store';
 import { Provider as ReduxProvider } from 'react-redux';
 

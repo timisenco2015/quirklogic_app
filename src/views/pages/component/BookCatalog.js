@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../styles/App.css';
+import '../../styles/App.css';
 import {Switch} from 'antd';
 import _ from 'lodash';
 import styled from 'styled-components';
@@ -23,13 +23,13 @@ const BookCatalog=()=> {
   };
 
   return (
-    <><div style={{display:'flex',flexDirection:'column',gap:'10px',margin:'24px'}}>
+    <><div style={{display:'flex',flexDirection:'column',gap:'10px',margin:'24px'}} data-test="component-bookcatalog">
       <SwitchContainer>
-     <Switch size="large" checked={disabled} onClick={toggle} />
+     <Switch size="large" checked={disabled} onClick={toggle} data-set="component-bookcatalog-button-toggle"/>
      <ViewText>{switchView} </ViewText>
       </SwitchContainer>
       
-      {disabled?<ViewAllBooksWidget/>:<AddBookWidget/>}
+      {disabled?<ViewAllBooksWidget data-test="component-bookcatalog-viewbookwidget"/>:<AddBookWidget data-test="component-bookcatalog-addbookwidget"/>}
       </div>
     </>
   );

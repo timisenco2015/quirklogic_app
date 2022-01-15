@@ -3,7 +3,7 @@ import ApiRequest from '../../../middlewares/ApiRequest';
 
 export const saveBooks = (book) => ({
    type: types.SAVE_BOOK,
-    payload: ApiRequest.POST(`api/books`,book),
+    payload: ApiRequest.POST(`api/book`,book),
   });
 
   export const getAllBooks = () => ({
@@ -14,7 +14,7 @@ export const saveBooks = (book) => ({
 
    export const deleteSpecificBook= (bookId)=> ({
     type: types.DELETE_BOOK,
-     payload: ApiRequest.DELETE(`api/books/${bookId}`),
+     payload: ApiRequest.DELETE(`api/book/${bookId}`),
    });
 
    export const resetSavedCatalogBook =(key)=>({

@@ -2,7 +2,8 @@ import React from 'react';
 import { Input } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
-import { colours } from '../styles/colours';
+import { colours } from '../../styles/colours'
+
 const SearchInput = ({ placeholder, onChangeInput }) => {
   return (
     <StyleInput

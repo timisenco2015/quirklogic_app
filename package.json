@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^12.1.2"
+    "@testing-library/react": "^12.1.2",
+    "babel-plugin-react-remove-properties": "^0.3.0"
   }
 }

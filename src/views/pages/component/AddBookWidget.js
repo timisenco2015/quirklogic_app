@@ -1,14 +1,15 @@
 import React, { useState,useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { saveBooks } from '../../state/ducks/books/actions';
+import { saveBooks } from '../../../state/ducks/books/actions';
 import {
   Form,
   Input,
   Button,
   message
 } from 'antd';
-import GlobalModal from '../pages/GlobalModal';
-import ErrorPage from '../pages/ErrorPage';
+import GlobalModal from '../globalModal/GlobalModal';
+import ErrorPage from '../error/ErrorPage';
+
 
   const AddBookWidget = () => {
   const [form] = Form.useForm();
